@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Murali Ghantasala | Portfolio Website</title>
+    <style>
+        :root {
+            --primary: #0f172a;
+            --secondary: #2563eb;
+            --accent: #38bdf8;
+            --text: #334155;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: var(--accent);
+            font-weight: 500;
+        }
+
+        .contact-bar {
+            background-color: #1e293b;
+            color: #cbd5e1;
+            padding: 0.75rem;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        .contact-bar a {
+            color: var(--accent);
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .stat-card {
+            background: linear-gradient(135deg, var(--secondary), #1d4ed8);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .stat-card h3 {
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-card p {
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+
+        section {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: var(--primary);
+            border-bottom: 3px solid var(--secondary);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .skill-group h4 {
+            color: var(--secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        .skill-group ul {
+            list-style-type: none;
+        }
+
+        .skill-group li {
+            margin-bottom: 0.25rem;
+            padding-left: 1rem;
+            position: relative;
+        }
+
+        .skill-group li::before {
+            content: "•";
+            color: var(--secondary);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        .exp-item {
+            margin-bottom: 1.5rem;
+            border-left: 3px solid #e2e8f0;
+            padding-left: 1rem;
+        }
+
+        .exp-header {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            font-weight: bold;
+            color: var(--primary);
+        }
+
+        .exp-role {
+            color: var(--secondary);
+            font-style: italic;
+            margin-bottom: 0.5rem;
+        }
+
+        .exp-item ul, .achievements ul {
+            margin-left: 1.25rem;
+            margin-top: 0.5rem;
+        }
+
+        .exp-item li, .achievements li {
+            margin-bottom: 0.4rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #64748b;
+            font-size: 0.9rem;
+            background-color: #0f172a;
+            color: white;
+            margin-top: 4rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>MURALI GHANTASALA</h1>
+        <p>Manager - Channel Operations | Accounts Payable | Finance & Accounts</p>
+    </header>
+
+    <div class="contact-bar">
+        Vijayawada, Andhra Pradesh, India | 📱 9515159020 / 7674989946 | ✉️ <a href="mailto:murali.gh2000@gmail.com">murali.gh2000@gmail.com</a> | 🔗 <a href="https://www.linkedin.com/in/murali-ghantasala-m9020" target="_blank">LinkedIn Profile</a>
+    </div>
+
+    <div class="container">
+        
+        <!-- Summary Dashboard -->
+        <section>
+            <h2>Professional Summary</h2>
+            <p>Results-driven Finance & Accounts professional with 20+ years of experience across Telecom, Investment Services, and Manufacturing sectors. Experienced in finance operations, vendor and partner billing coordination, GR/IR reconciliation, Capex/Opex verification, payment controls, tax compliance, bank and account reconciliations, audit coordination, MIS reporting, and process automation. Demonstrated ability to lead teams, improve transaction-processing efficiency, strengthen financial controls, and collaborate with cross-functional stakeholders.</p>
+        </section>
+
+        <!-- Impact Stats -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3>20+ Years</h3>
+                <p>Corporate Finance Experience</p>
+            </div>
+            <div class="stat-card">
+                <h3>₹130 Crore</h3>
+                <p>Circle Treasury Funds Managed</p>
+            </div>
+            <div class="stat-card">
+                <h3>2 Hours</h3>
+                <p>Commission Processing Time (down from 3 days)</p>
+            </div>
+            <div class="stat-card">
+                <h3>₹4 Million</h3>
+                <p>Tax Savings Generated (FY 2014-15)</p>
+            </div>
+        </div>
+
+        <!-- Competencies & Skills -->
+        <section>
+            <h2>Core Competencies & Technical Skills</h2>
+            <div class="skills-container">
+                <div class="skill-group">
+                    <h4>Finance Operations</h4>
+                    <ul>
+                        <li>Accounts Payable & Payment Controls</li>
+                        <li>Vendor Billing & GR/IR Reconciliation</li>
+                        <li>Capex/Opex Verification</li>
+                        <li>Ledger, Debtor & Bank Reconciliations</li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <h4>Taxation & Compliance</h4>
+                    <ul>
+                        <li>TDS, GST, Income Tax & Indirect Tax</li>
+                        <li>GSTR-2B Reconciliation</li>
+                        <li>Audit Coordination & Documentation</li>
+                        <li>SOP Development & Internal Controls</li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <h4>Automation & Analytics</h4>
+                    <ul>
+                        <li>Advanced Excel (VLOOKUP, Pivot Tables)</li>
+                        <li>Macros & VBA Report Automation</li>
+                        <li>Power BI, Tableau, & QlikView</li>
+                        <li>SAP (End User), Tally, & Oracle</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Experience -->
+        <section>
+            <h2>Professional Experience</h2>
+            
+            <div class="exp-item">
+                <div class="exp-header">
+                    <span>Reliance Jio Infocomm Ltd</span>
+                    <span>Feb 2023 – Present</span>
+                </div>
+                <div class="exp-role">Manager – FCnA</div>
+                <ul>
+                    <li>Manage state-level business financial operations, including channel partner operations, billing, scheme settlements, and issue resolution.</li>
+                    <li>Ensure accurate AGR revenue reconciliation, validation, and timely submission to support audit readiness.</li>
+                    <li>Design and publish dashboards to monitor KPIs, business performance, and financial metrics.</li>
+                    <li>Consistently ranked among the top five in KPI performance across the PAN-India business finance vertical.</li>
+                </ul>
+            </div>
+
+            <div class="exp-item">
+                <div class="exp-header">
+                    <span>Reliance Jio Infocomm Ltd</span>
+                    <span>Oct 2015 – Jan 2023</span>
+                </div>
+                <div class="exp-role">Deputy Manager – FCnA</div>
+                <ul>
+                    <li>Managed GST and Income Tax queries for channel partners in coordination with auditors and internal stakeholders.</li>
+                    <li>Performed monthly GSTR-2B reconciliation with purchase registers and rental vendors.</li>
+                    <li>Supported GST migration from Service Tax and PAN–Aadhaar linking activities.</li>
+                </ul>
+            </div>
+
+            <div class="exp-item">
+                <div class="exp-header">
+                    <span>Idea Cellular Limited</span>
+                    <span>Sep 2010 – Oct 2015</span>
+                </div>
+                <div class="exp-role">Assistant Manager – Finance & Accounts</div>
+                <ul>
+                    <li>Managed monthly TDS payments and returns following reconciliation under Section 197.</li>
+                    <li>Verified Capex and Opex transactions, reconciled GR/IR accounts, and monitored Delegation of Authority controls.</li>
+                    <li>Managed monthly fund forecasts and coordinated daily funding with corporate teams across circles.</li>
+                </ul>
+            </div>
+
+            <div class="exp-item">
+                <div class="exp-header">
+                    <span>Franklin Templeton Investment Services (I) Pvt. Ltd.</span>
+                    <span>May 2009 – Sep 2010</span>
+                </div>
+                <div class="exp-role">Analyst – Fund Accounting</div>
+                <ul>
+                    <li>Prepared Statements of Investments for US, Canada, and Asia funds in accordance with SEC formats.</li>
+                    <li>Reconciled fund-wise market value, cost, and share balances for US funds.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Selected Achievements -->
+        <section class="achievements">
+            <h2>Selected Achievements</h2>
+            <ul>
+                <li><strong>MD Award:</strong> Received for smooth system implementation during the Andhra Pradesh state reorganization covering ~5,000 distributors.</li>
+                <li><strong>CMD Appreciation:</strong> Honored for securing lower TDS certificates, saving roughly ₹4 million in FY 2014–15.</li>
+                <li><strong>Circle Treasury Rank #1:</strong> Ranked top among 23 circles for two consecutive years, managing monthly funds of ~₹130 crore.</li>
+                <li><strong>Process Automation:</strong> Automated TDS certificate segregation and distribution using Excel macros for 5,000 quarterly certificates, reducing manual effort significantly.</li>
+            </ul>
+        </section>
+
+        <!-- Education -->
+        <section>
+            <h2>Education & Professional Development</h2>
+            <p><strong>SMP (Senior Management Programme)</strong> — Pursuing, Indian Institute of Management (IIM), Visakhapatnam</p>
+            <p><strong>MBA (Master of Business Administration)</strong> — Indian School of Business Management and Administration, 2011</p>
+            <p><strong>Bachelor of Commerce (B.Com.)</strong> — Acharya Nagarjuna University, Andhra Pradesh, 2004</p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Murali Ghantasala. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
